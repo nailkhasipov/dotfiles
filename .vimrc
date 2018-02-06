@@ -1,13 +1,21 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
 set nocompatible
 
 syntax on
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'onehalfdark',
+      \ }
+colorscheme onehalflight
 
 " Show line numbers
 set number
