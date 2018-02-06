@@ -6,6 +6,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.git,*/node_modules/*
+
 call plug#end()
 
 set nocompatible
